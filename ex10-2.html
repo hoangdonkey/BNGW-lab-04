@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10-2</title>
+	<style>
+		input: required{
+			outline: 1px red solid;
+			color: green;
+		}
+		input:required:valid{
+			background-size: 10px 10px;
+			background-position: right top;
+			background-repeat: no-repeat;
+		}
+		input:required:invalid{
+			background-size: 10px 10px;
+			background-position: right top;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<form action="test.html" method="get">
+		<label for="emailid">Email:</label>
+		<input type="email" value="" id="emailid" name="emailaddress" maxlength="255">
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
